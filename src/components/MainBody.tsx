@@ -9,5 +9,10 @@ export default function MainBody(): JSX.Element {
     <BabyName id={baby.id} name={baby.name} sex={baby.sex} key={index} />
   ));
 
-  return <>{listBabies}</>;
+  return (
+    <div className="body-div">
+      <h2 className="subtitle">Title</h2>
+      {listBabies}
+    </div>
+  );
 }
